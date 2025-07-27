@@ -1,12 +1,15 @@
-import React from "react";
+import React from 'react';
+import Link from './Links';
 
-function NavBar() {
-  return (
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-    </nav>
-  );
+class Navbar extends React.Component {
+  render() {
+    return (
+      <nav>
+        <Link url="/" text="Home" />
+        <Link url="/about" text="About" />
+      </nav>
+    );
+  }
 }
 
-export default NavBar;
+export default Navbar;
